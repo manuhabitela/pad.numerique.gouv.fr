@@ -95,6 +95,7 @@ require('../css/site.css')
 
 require('highlight.js/styles/github-gist.css')
 require('./fix-aria-hidden-for-modals')
+require('../css/custom-note.css')
 
 let defaultTextHeight = 20
 let viewportMargin = 20
