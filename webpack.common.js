@@ -96,14 +96,6 @@ module.exports = {
           to: 'fonts/'
         },
         {
-          context: path.join(__dirname, 'node_modules/@gouvfr/dsfr/dist/fonts'),
-          from: '**/*',
-          globOptions: {
-            dot: false
-          },
-          to: 'fonts/'
-        },
-        {
           context: path.join(__dirname, 'node_modules/emojify.js'),
           from: 'dist/**/*',
           globOptions: {
@@ -157,7 +149,6 @@ module.exports = {
       path.join(__dirname, 'public/css/bootstrap-social.css'),
       path.join(__dirname, 'node_modules/select2/select2.css'),
       path.join(__dirname, 'node_modules/select2/select2-bootstrap.css'),
-      path.join(__dirname, 'node_modules/bootstrap/dist/css/bootstrap.min.css'),
       path.join(__dirname, 'node_modules/@gouvfr/dsfr/dist/css/dsfr.min.css')
     ],
     'cover-pack': [
