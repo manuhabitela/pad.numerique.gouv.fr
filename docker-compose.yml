@@ -1,6 +1,7 @@
 version: '3'
 services:
   app:
+    image: betagouv-hedgedoc
     build: .
     environment:
       - CMD_DB_URL=postgres://hedgedoc:password@db:5432/hedgedoc
