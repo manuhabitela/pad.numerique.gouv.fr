@@ -1,0 +1,18 @@
+{
+  "production": {
+    "csp": {
+      "directives": {
+        "imgSrc": ["*", "'self'", "'img-src'", "data", "https"],
+        "fontSrc": ["'self'", "data:", "https://public.slidesharecdn.com", "https://fonts.gstatic.com", "https://github.com"]
+      }
+    }
+  },
+  "development": {
+    "csp": {
+      "directives": {
+        "imgSrc": ["*", "'self'", "'img-src'", "data", "https"],
+        "fontSrc": ["'self'", "data:", "https://public.slidesharecdn.com", "https://fonts.gstatic.com", "https://github.com"]
+      }
+    }
+  }
+}
