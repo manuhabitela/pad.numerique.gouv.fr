@@ -6,6 +6,16 @@
         "imgSrc": ["data:"],
         "fontSrc": ["data:"]
       }
+    },
+    "db": {
+      "dialect": "postgres",
+      "protocol": "postgres",
+      "dialectOptions": {
+        "ssl": {
+          "require": true,
+          "rejectUnauthorized": false
+        }
+      }
     }
   },
   "development": {
