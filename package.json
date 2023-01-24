@@ -70,7 +70,7 @@
     "minio": "7.0.32",
     "moment": "^2.17.1",
     "morgan": "^1.7.0",
-    "mysql2": "^2.0.0",
+    "mysql2": "^3.0.0",
     "node-fetch": "^2.6.1",
     "passport": "^0.6.0",
     "passport-dropbox-oauth2": "^1.1.0",
@@ -91,7 +91,7 @@
     "prometheus-api-metrics": "^3.2.0",
     "randomcolor": "^0.6.0",
     "readline-sync": "^1.4.7",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.0.0",
     "sanitize-filename": "^1.6.3",
     "scrypt-kdf": "^2.0.1",
     "sequelize": "^5.21.1",
@@ -137,7 +137,7 @@
     "url": "https://github.com/hedgedoc/hedgedoc.git"
   },
   "devDependencies": {
-    "abcjs": "6.1.7",
+    "abcjs": "6.1.8",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
     "babel-loader": "7.1.5",
@@ -151,12 +151,12 @@
     "copy-webpack-plugin": "6.4.1",
     "css-loader": "5.2.7",
     "emojify.js": "1.1.0",
-    "esbuild-loader": "2.20.0",
+    "esbuild-loader": "2.21.0",
     "escape-html": "1.0.3",
-    "eslint": "8.31.0",
+    "eslint": "8.32.0",
     "eslint-config-standard": "17.0.0",
-    "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-n": "15.6.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-n": "15.6.1",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-standard": "4.1.0",
@@ -209,6 +209,6 @@
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.0",
-    "utf-8-validate": "^5.0.1"
+    "utf-8-validate": "^6.0.0"
   }
 }
