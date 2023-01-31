@@ -16,10 +16,6 @@
           "rejectUnauthorized": false
         }
       }
-    },
-    "observability": {
-      "exposeMetrics": false,
-      "exposeStatus": false
     }
   },
   "development": {
