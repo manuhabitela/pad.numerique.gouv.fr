@@ -116,10 +116,7 @@
 
                 <div class="mastfoot">
                     <div class="inner">
-                        <select class="ui-locale"></select>
-                        <br>
-                        <br>
-                        <p> 
+                        <p>
                             <%- __('Powered by %s', '<a href="https://hedgedoc.org">HedgeDoc</a>') %> | <a href="<%- serverURL %>/s/release-notes" target="_blank" rel="noopener"><%= __('Releases') %></a> | <a href="<%- sourceURL %>" target="_blank" rel="noopener"><%= __('Source Code') %></a><% if(imprint) { %> | <a href="<%- serverURL %>/s/imprint" target="_blank" rel="noopener"><%= __('Imprint') %></a><% } %><% if(privacyStatement) { %> | <a href="<%- serverURL %>/s/privacy" target="_blank" rel="noopener"><%= __('Privacy') %></a><% } %><% if(termsOfUse) { %> | <a href="<%- serverURL %>/s/terms-of-use" target="_blank" rel="noopener"><%= __('Terms of Use') %></a><% } %>
                         </p>
                     </div>
@@ -156,28 +153,24 @@
       </div>
       <div class="fr-footer__bottom">
           <ul class="fr-footer__bottom-list">
-                    
+
               <li class="fr-footer__bottom-item">
-                
-                  
                   <a href="/s/terms-of-use" class="fr-footer__bottom-link">Mentions légales</a>
-                
               </li>
-                    
+
               <li class="fr-footer__bottom-item">
-                
-                  
                   <a href="/s/suivi/" class="fr-footer__bottom-link">Données personnelles et cookies</a>
-                
               </li>
-                    
+
               <li class="fr-footer__bottom-item">
-                
-                  
                   <a href="/s/accessibilite/" class="fr-footer__bottom-link">Accessibilité : non conforme</a>
-                
               </li>
-            
+
+              <li class="fr-footer__bottom-item">
+                  <label for="ui_locale" class="fr-footer__bottom-link">Langue de l’interface</label>
+                  <select id="ui_locale" class="ui-locale" ></select>
+              </li>
+
           </ul>
       </div>
     </div>
