@@ -27,9 +27,16 @@ a:focus, a:hover {
   text-decoration: underline;
   color:black;
 }
-.fr-footer__bottom-link:hover {
+a.fr-footer__bottom-link:hover {
   text-decoration: underline;
   color:black;
+}
+
+.ui-locale.fr-select {
+  display: inline-block;
+  width: auto;
+  font-size: .75em;
+  padding: .3em 2.5em .4em 1em;
 }
 
 [href] {
