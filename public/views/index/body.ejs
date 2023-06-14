@@ -33,6 +33,7 @@
                             <ul class="nav masthead-nav">
                                 <li class="ui-home<% if(!signin) { %> active<% } %>"><a href="#"><%= __('Intro') %></a>
                                 </li>
+                                <li class=""><a href="<%- serverURL %>/apropos">Aide</a></li>
                                 <li class="ui-history<% if(signin) { %> active<% } %>"><a href="#"><%= __('History') %></a>
                                 </li>
                                 <div class="ui-signin" style="float: right; margin-top: 8px;<% if(signin) { %> display: none;<% } %>">
