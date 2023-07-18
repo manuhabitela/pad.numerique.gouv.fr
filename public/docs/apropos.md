@@ -6,9 +6,9 @@ description: Pour prendre des notes.
 
 ## C'est quoi en quelques mots?
 
-Pour prendre des notes seules ou à plusieurs, vous pouvez utiliser : [pad.numerique.gouv.fr](https://pad.numerique.gouv.fr).
+Pour prendre des notes seul ou à plusieurs, vous pouvez utiliser : [pad.numerique.gouv.fr](https://pad.numerique.gouv.fr).
 
-C'est un outil en ligne géré par la dinum.
+Il s'agit d'un outil en ligne géré par la dinum.
 
 ## Les "pads", comment ça marche ?
 
@@ -22,7 +22,10 @@ Pour accéder à ces pads confidentiels vous pouvez vous identifier avec votre a
 
 Vous pouvez **rendre un pad consultable publiquement** en cliquant sur le bouton qui dit initialement "LIMITED" \(en haut à droite de votre texte\). Si vous choisissez "Editable" il sera visible par toute personne à qui vous donnez le lien, mais éditable seulement par les autre agent de l'état. Si vous choisissez "Freely" il sera éditable par n'importe qui \(à condition d'avoir le lien\). **Assurez-vous dans les deux cas que le document ne contient pas d'informations à caractère personnel ou confidentiel.**
 
+## Qui peut créer des pads ?
+
+Seuls les agents de l'état peuvent se connecter sur pad.numerique.gouv.fr.
+Consultez [la page d'authentification](https://www.authentification.beta.gouv.fr/) pour tester l'éligibilité des adresses e-mails.
 ## Quelques conseils pour l'utiliser ?
 
-Voici un [exemple](https://pad.numerique.gouv.fr/atelier) qui est également un tuto pour vous expliquer comment cela fonctionne.
-
+Voici un [exemple](https://pad.numerique.gouv.fr/atelier) qui est également un tutoriel pour vous expliquer comment cela fonctionne.
