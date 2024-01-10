@@ -109,7 +109,7 @@
     "xss": "1.0.14"
   },
   "engines": {
-    "node": ">=16"
+    "node": "20.x"
   },
   "bugs": "https://github.com/hedgedoc/hedgedoc/issues",
   "keywords": [
