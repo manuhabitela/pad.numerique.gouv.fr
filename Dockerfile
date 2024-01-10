@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:lts-slim
 
 ENV PUPPETEER_SKIP_DOWNLOAD=true
 
