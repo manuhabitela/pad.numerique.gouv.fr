@@ -275,6 +275,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gouvfr/dsfr@npm:=1.1.0":
+  version: 1.1.0
+  resolution: "@gouvfr/dsfr@npm:1.1.0"
+  checksum: 7b61b5913f835de47af2fe0f47a173a6b37c766081c3bdb1263676c256103b05d8746d8afaff6e5c808ff0fc2918e3b11341f152adecca6a33039aa39c4ac88a
+  languageName: node
+  linkType: hard
+
 "@hedgedoc/codemirror-5@npm:5.65.12":
   version: 5.65.12
   resolution: "@hedgedoc/codemirror-5@npm:5.65.12"
@@ -1189,6 +1196,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "HedgeDoc@workspace:."
   dependencies:
+    "@gouvfr/dsfr": =1.1.0
     "@hedgedoc/codemirror-5": 5.65.12
     "@passport-next/passport-openid": 1.0.0
     Idle.Js: "git+https://github.com/shawnmclean/Idle.js"
