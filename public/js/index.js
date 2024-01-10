@@ -4,7 +4,7 @@
    key, Dropbox, Visibility */
 
 import TurndownService from 'turndown'
-import CodeMirror from 'codemirror/lib/codemirror.js'
+import CodeMirror from '@hedgedoc/codemirror-5/lib/codemirror.js'
 
 import 'jquery-ui/ui/widgets/resizable'
 import 'jquery-ui/themes/base/resizable.css'
@@ -659,8 +659,13 @@ $(document).ready(function () {
       })
   }
 
+  if (Cookies.get('nightMode') !== undefined) {
+    store.set('nightMode', Cookies.get('nightMode') === 'true')
+    Cookies.remove('nightMode')
+  }
+
   // Re-enable nightmode
-  if (store.get('nightMode') || Cookies.get('nightMode')) {
+  if (store.get('nightMode') === true) {
     $body.addClass('night')
     ui.toolbar.night.addClass('active')
   }
@@ -2085,24 +2090,12 @@ $('.ui-delete-modal-confirm').click(function () {
 
 function toggleNightMode () {
   const $body = $('body')
-  const isActive = ui.toolbar.night.hasClass('active')
-  if (isActive) {
-    $body.removeClass('night')
-    appState.nightMode = false
-  } else {
-    $body.addClass('night')
-    appState.nightMode = true
-  }
-  if (store.enabled) {
-    store.set('nightMode', !isActive)
-  } else {
-    Cookies.set('nightMode', !isActive, {
-      expires: 365,
-      sameSite: window.cookiePolicy,
-      secure: window.location.protocol === 'https:'
-    })
-  }
+  const isActive = store.get('nightMode') === true
+  $body.toggleClass('night', !isActive)
+  ui.toolbar.night.toggleClass('active', !isActive)
+  store.set('nightMode', !isActive)
 }
+
 function emitPermission (_permission) {
   if (_permission !== permission) {
     socket.emit('permission', _permission)

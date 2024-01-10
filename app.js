@@ -75,7 +75,7 @@ app.use(morgan('combined', {
 }))
 
 // Register prometheus metrics endpoint
-if (config.observability.exposeMetrics) {
+if (config.enableStatsApi) {
   app.use(apiMetrics())
   metrics.setupCustomPrometheusMetrics()
 }
@@ -183,7 +183,7 @@ app.use(flash())
 
 // passport
 app.use(passport.initialize())
-app.use(useUnless(['/status', '/metrics'], passport.session()))
+app.use(useUnless(['/status', '/metrics', '/_health'], passport.session()))
 
 // check uri is valid before going further
 app.use(require('./lib/web/middleware/checkURIValid'))
@@ -228,17 +228,7 @@ app.locals.enableGitHubGist = config.isGitHubEnable
 app.locals.enableGitlabSnippets = config.isGitlabSnippetsEnable
 
 app.use(require('./lib/web/baseRouter'))
-
-if (config.observability.exposeStatus) {
-  app.use(require('./lib/web/statusRouter'))
-} else {
-  // the `/status` route is used by the hedgedoc container's
-  // healtcheck route so keep the endpoint alive
-  app.get('/status', function (req, res, next) {
-    res.sendStatus(200)
-  })
-}
-
+app.use(require('./lib/web/statusRouter'))
 app.use(require('./lib/web/auth'))
 app.use(require('./lib/web/historyRouter'))
 app.use(require('./lib/web/userRouter'))
