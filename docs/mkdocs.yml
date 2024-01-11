@@ -28,6 +28,7 @@ nav:
           - Nextcloud: guides/auth/nextcloud.md
           - Twitter: guides/auth/twitter.md
           - Authelia: guides/auth/authelia.md
+          - Azure Active Directory: guides/auth/azure-ad.md
       - Media Backend:
           - MinIO: guides/minio-image-upload.md
           - S3: guides/s3-image-upload.md
@@ -39,6 +40,7 @@ nav:
       - 'HedgeDoc Flavored Markdown': references/hfm.md
       - 'Slide Options': references/slide-options.md
       - 'URL Scheme': references/url-scheme.md
+      - 'YAML Metadata': references/yaml-metadata.md
   - Developer:
       - 'Getting Started': dev/getting-started.md
       - API: dev/api.md
@@ -90,6 +92,7 @@ extra_css:
   - theme/styles/roboto.css
 
 plugins:
+  - search
   - redirects:
       redirect_maps:
         'setup/docker-linuxserver.md': 'setup/community.md'

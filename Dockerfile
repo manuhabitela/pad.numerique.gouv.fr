@@ -1,10 +1,10 @@
-FROM node:16
+FROM node:lts-slim
 
 ENV PUPPETEER_SKIP_DOWNLOAD=true
 
 EXPOSE 3000
 
-RUN apt-get update && apt-get install -y --no-install-recommends python
+RUN apt-get update && apt-get upgrade && apt-get install -y --no-install-recommends git ca-certificates
 
 WORKDIR /app
 
@@ -18,4 +18,4 @@ COPY . .
 
 RUN npm run build
 
-CMD npm run start
+CMD ["npm", "run", "start"]
