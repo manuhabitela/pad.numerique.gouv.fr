@@ -30,6 +30,7 @@ import S from 'string'
 require('./locale')
 require('../css/cover.css')
 require('../css/custom.css')
+require('../css/lasuite-fixes.css')
 require('../css/site.css')
 
 require('./fix-aria-hidden-for-modals')
@@ -92,7 +93,7 @@ function pageInit () {
   )
 }
 
-$('.masthead-nav li').click(function () {
+$('.cover-nav li').click(function () {
   $(this).siblings().removeClass('active')
   $(this).addClass('active')
 })

@@ -1,0 +1,42 @@
+.lasuite {
+  background: white;
+}
+
+.lasuite-header__service-link:hover,
+.lasuite-header__service-link:focus {
+  text-decoration: none;
+}
+
+.fr-btn:focus, .fr-btn:hover {
+  color: white;
+}
+
+.fr-btn--secondary:focus, .fr-btn--secondary:hover {
+  color: var(--text-action-high-blue-france);
+}
+
+.lasuite-link:hover,
+.lasuite-link:focus {
+  background: none !important;
+  text-decoration: underline;
+  color: var(--text-action-high-blue-france)
+}
+
+.lasuite-homepage__desc-container a + a {
+  margin-left: 0.5rem;
+}
+
+.lasuite-header__tools-links .fr-btns-group {
+  align-items: center;
+}
+
+.lasuite-header__tools-links .fr-btn {
+  min-height: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.fr-icon-arrow-right-line::before,
+.fr-icon-arrow-right-line::after {
+  -webkit-mask-image: url("../../node_modules/@gouvfr/dsfr/dist/icons/system/arrow-right-line.svg");
+  mask-image: url("../../node_modules/@gouvfr/dsfr/dist/icons/system/arrow-right-line.svg");
+}
