@@ -18,6 +18,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "@gouvfr-lasuite/integration": "1.0.1",
     "@gouvfr/dsfr": "=1.1.0",
     "@passport-next/passport-openid": "1.0.0",
     "Idle.Js": "git+https://github.com/shawnmclean/Idle.js",

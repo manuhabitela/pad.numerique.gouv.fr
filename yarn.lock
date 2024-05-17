@@ -275,6 +275,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gouvfr-lasuite/integration@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@gouvfr-lasuite/integration@npm:1.0.1"
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-dom": "*"
+    react: "*"
+    react-dom: "*"
+    typescript: "*"
+  checksum: fb199453572f5982cb5f524a5c3209a55d3b0a972e17df68babaa66d180fc9ed4495f6b8847c0780e0af50b356498904ad188343ddd389ddcc3097c6ca595cee
+  languageName: node
+  linkType: hard
+
 "@gouvfr/dsfr@npm:=1.1.0":
   version: 1.1.0
   resolution: "@gouvfr/dsfr@npm:1.1.0"
@@ -1196,6 +1209,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "HedgeDoc@workspace:."
   dependencies:
+    "@gouvfr-lasuite/integration": 1.0.1
     "@gouvfr/dsfr": =1.1.0
     "@hedgedoc/codemirror-5": 5.65.12
     "@passport-next/passport-openid": 1.0.0
